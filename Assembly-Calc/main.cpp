@@ -12,12 +12,19 @@ int main()
 	while (true)
 	{
 		std::string instr, operand;
+		int strLength;
 		uintptr_t operand1, operand2;
 
 		/*NOTE: it is important that you keep convert both the input and the output to hex. Otherwise you will get different answers*/
 		std::cin >> instr;
+		//std::cin >> operand;
 		std::cin >> std::hex >> operand1;
 		std::cin >> std::hex >> operand2;
+
+		//strLength = operand.length();
+		//char char_array[strLength + 1];
+
+
 
 		//if (operand == "ans")
 		//{

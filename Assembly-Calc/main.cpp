@@ -61,6 +61,15 @@ int main()
 
 			answer = num;
 		}
+		//BETA: not sure if this works with 64 bit hex values
+		else if (instr == "xor")
+		{
+			uintptr_t num;
+			num = operand1^operand2;
+			std::cout << std::hex << num << std::endl;
+
+			answer = num;
+		}
 		else
 		{
 			//std::cout << "Invalid format or unsupported. Try again" << std::endl;

@@ -6,6 +6,7 @@ int main()
 {
 	std::cout << "Hello! Please enter in this format: <instruction> <operand1> <operand2>" << std::endl;
 	std::cout << "NOTE: All operands should be entered in Hex" << std::endl;
+	std::cout << "The format also operates similarly to assembly code" << std::endl;
 	
 	uintptr_t answer;
 	
@@ -68,7 +69,7 @@ int main()
 
 			answer = num;
 		}
-		//BETA: not sure if this works with 64 bit hex values
+		//This has been tested with 64 bit hex values
 		else if (instr == "xor")
 		{
 			uintptr_t num;

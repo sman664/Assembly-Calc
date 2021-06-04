@@ -2,11 +2,14 @@
 #include <string>
 #include <Windows.h>
 
+
+//0x7fffe9ebf984 is an example 64 bit address
+
 int main() 
 {
 	std::cout << "Hello! Please enter in this format: <instruction> <operand1> <operand2>" << std::endl;
 	std::cout << "NOTE: All operands should be entered in Hex" << std::endl;
-	std::cout << "The format also operates exactly like assembly code" << std::endl;
+	std::cout << "The format also operates exactly like assembly code" << std::endl << std::endl;
 	
 	uintptr_t answer;
 	
@@ -103,7 +106,7 @@ int main()
 
 			answer = num;
 		}
-		//This has been tested with 64 bit hex values
+		//XOR has been tested with 64 bit hex values
 		else if (instr == "xor")
 		{
 			uintptr_t num;
@@ -117,7 +120,8 @@ int main()
 			//std::cout << "Invalid format or unsupported. Try again" << std::endl;
 			return false;
 		}
-			
+		
+		std::cout << std::endl;
 
 	}
 
